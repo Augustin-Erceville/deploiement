@@ -1,5 +1,16 @@
 # DÉPLOIEMENT DE VOTRE SITE WEB  
 Retrouvez la machine virtuelle [ICI](https://lyceerobertschuman710.sharepoint.com/:f:/r/sites/2025DEVSLAM1/Documents%20partages/0%20-%20Les%20tetards/ERCEVILLE%20Augustin/VM_Linux?csf=1&web=1&e=lVBP5g)
+1. [Création de la machine virtuelle](#1-création-de-la-machine-virtuelle)
+2. [Configuration de la machine virtuelle](#2-configuration-de-la-machine-virtuelle)
+3. [Configuration APT](#3-configuration-apt)
+4. [Installation du Serveur SSH](#4-installation-du-serveur-ssh)
+5. [Installation de Putty](#5-installation-de-putty)
+6. [Configuration FTP](#6-configuration-ftp)
+7. [Testez avec FileZilla](#7-testez-avec-filezilla)
+8. [Serveur Web LAMP](#8-serveur-web-lamp)
+9. [Création d'un VHOST et un domaine local](#9-création-dun-vhost-et-un-domaine-local)
+10. [Importer le site depuis Github](#10-importer-le-site-depuis-github)
+---
 ## 1. Création de la machine virtuelle  
 
 Nous allons créer une machine virtuelle sur Hyper-V. Assurez-vous d'avoir activé l'outil de virtualisation sur votre ordinateur.  
@@ -102,6 +113,7 @@ Pour installer Putty, vous pouvez cliquez sur le lien [**ci-après**](https://th
 9. Pour vérifier que tout est opérationnel, effectuez la commande `whoami` cela est sencé afficher "*root*".
 10. Effectuez la commande `hostname -I`, ce qui est sencé vous donner l'adresse IP de votre machine virtuelle.
 ## 6. Configuration FTP
+FTP aussi appeller **F**ile **T**ransfer **P**rotocol, est un protocole de communication destiné au partage de fichiers sur un réseau TCP/IP. Il permet, depuis un ordinateur, de copier des fichiers vers un autre ordinateur du réseau, ou encore de supprimer ou de modifier des fichiers sur cet ordinateur. Ce mécanisme de copie est souvent utilisé pour alimenter un site web hébergé chez un tiers.  
 1. Pour installer le serveur FTP executer la commande :  
 `apt install vsftpd`
 2. Vous pouvez vérifier que le serveur a été correctement installer avec :  
