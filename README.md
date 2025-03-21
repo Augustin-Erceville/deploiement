@@ -1,4 +1,5 @@
 # DÉPLOIEMENT DE VOTRE SITE WEB  
+Retrouvez la machine virtuelle [ICI](https://lyceerobertschuman710.sharepoint.com/:f:/r/sites/2025DEVSLAM1/Documents%20partages/0%20-%20Les%20tetards/ERCEVILLE%20Augustin/VM_Linux?csf=1&web=1&e=lVBP5g)
 ## 1. Création de la machine virtuelle  
 
 Nous allons créer une machine virtuelle sur Hyper-V. Assurez-vous d'avoir activé l'outil de virtualisation sur votre ordinateur.  
