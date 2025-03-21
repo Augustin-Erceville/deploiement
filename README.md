@@ -194,7 +194,6 @@ Inserez le contenu suivant en remplassant "*[NOM DOMAINE]*" par votre nom de dom
 </VirtualHost>
 ```
 5. Activez le site en effectuant les commandes :  
-`a2ensite [NOM DOMAINE].local.conf`  
 `systemctl reload apache2`
 6. Modifiez le fichier "*hosts*" sur Windows (machine principal).  
 Rendez vous dans le fichier `C:\Windows\System32\drivers\etc\hosts` de votre machine principale.  
@@ -218,8 +217,8 @@ Normalement ce que vous avez fait dans l'[étape 2](#9-création-dun-vhost-et-un
 1. Avant d'importer le [projet Github](https://github.com/Augustin-Erceville/Cinema), nous allons devoir installer git sur la VM.  
 Il est fort possible que vous le site ne soit pas fonctionnel dû au fait que vous n'ayez pas installer la [base de donnée](https://github.com/Augustin-Erceville/Cinema/blob/f0890d0e081fd10698e14cf9ea282c8ceef37de3/documentations/cinema.sql).
 2. Pour installer git, effectuez les commandes suivantes :  
-`sudo apt update`  
-`sudo apt install git -y`
+`apt update`  
+`apt install git -y`
 3. Faite un nettoyage des fichiers actuel du site avec la commande :  
 `sudo rm -r /var/www/[NOM DOMAINE].local/*`
 4. Importez le repository Github afin d'importer les fichiers de votre projet.  
